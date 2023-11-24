@@ -1,0 +1,11 @@
+.cursor-blink {
+    animation: blinker 1s linear infinite;
+    color: white;
+    font-size: 140%;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
