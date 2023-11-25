@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import githubLogo from "../images/githubLogo.png";
 import linkedInLogo from "../images/linkedInLogo.png";
+import profileImg from "../images/profileImg.png"
 import "../styles/Home.css";
 
 export const Home = () => {
@@ -39,7 +40,7 @@ export const Home = () => {
 
   return (
     <div>
-      <h1>
+      <h1 className="hello">
         <span>Hi, I am </span>
         <span>
           <span className="job-titles">{title}</span>
@@ -53,6 +54,9 @@ export const Home = () => {
           engineer roles.
         </p>
       </div>
+
+      <img src={profileImg} alt="logo" className="profile-img"/>
+
       <div className="personal-links">
         <ul>
           <li>

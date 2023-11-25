@@ -10,8 +10,11 @@
     }
 }
 
+.hello {
+    font-weight: 700;
+}
 .job-titles {
-    color: rgb(16, 136, 136);
+    color: rgb(77, 109, 212)
 }
 
 ul {
@@ -34,6 +37,7 @@ li {
 
 .intro {
     word-wrap: break-word;
+    font-size: 18px;
 }
 
 .personal-links {
@@ -46,4 +50,20 @@ li {
     height: auto;
     display: block;
     margin: 0 auto;
+}
+
+.profile-img {
+    height: auto;
+    width: 400px;
+    /* animation: profile-img-spin infinite 10s linear; */
+}
+
+@keyframes profile-img-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
