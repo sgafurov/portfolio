@@ -6,6 +6,11 @@
     background-color: #181a1f;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .navbar-links {
     display: flex;
     justify-content: space-between;
