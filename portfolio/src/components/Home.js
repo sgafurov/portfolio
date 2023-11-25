@@ -10,7 +10,6 @@ export const Home = () => {
     "a Fullstack Developer  ",
     "a Frontend Champion  ",
     "a Backend Whisperer  ",
-    "a coffee enthusiast  ",
     "here to help  ",
   ];
 
@@ -18,7 +17,7 @@ export const Home = () => {
     const interval = setInterval(() => {
       // first display all the letters inside of a title
       if (letterIndex < titles[titleIndex].length) {
-        // update the title by adding the next letter
+        // update the title by appending the next letter
         setTitle((prevTitle) => prevTitle + titles[titleIndex][letterIndex]);
         setLetterIndex((prevIndex) => prevIndex + 1);
       } else {
@@ -46,7 +45,17 @@ export const Home = () => {
           <span className="cursor-blink">|</span>
         </span>
       </h1>
-      <p>More Info...</p>
+      <p>
+        Recent college grad with internship, project-based, and coursework
+        experience.
+      </p>
+      <p>Looking for entry level web development and sofware engineer roles.</p>
+      <div>
+        <ul>
+          <li>Github</li>
+          <li>LinkedIn</li>
+        </ul>
+      </div>
     </div>
   );
 };

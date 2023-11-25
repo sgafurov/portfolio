@@ -1,8 +1,3 @@
 export const About = () => {
-    return (
-      <div>
-        About
-      </div>
-    );
-  };
-  
+  return <div>About... Skills... Most used languages...</div>;
+};

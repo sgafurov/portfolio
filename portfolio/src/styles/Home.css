@@ -13,3 +13,15 @@
 .job-titles {
     color: rgb(16, 136, 136);
 }
+
+ul {
+    list-style-type: none;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    margin-right: 30px;
+    font-size: 16px;
+}
