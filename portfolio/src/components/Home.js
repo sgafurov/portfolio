@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import githubLogo from "../images/githubLogo.png";
+import linkedInLogo from "../images/linkedInLogo.png";
 import "../styles/Home.css";
 
 export const Home = () => {
@@ -30,8 +32,7 @@ export const Home = () => {
           setTitle("");
         }
       }
-    }, 150);
-
+    }, 170);
     // clean interval for component unmount
     return () => clearInterval(interval);
   }, [titleIndex, letterIndex]);
@@ -45,15 +46,25 @@ export const Home = () => {
           <span className="cursor-blink">|</span>
         </span>
       </h1>
-      <p>
-        Recent college grad with internship, project-based, and coursework
-        experience.
-      </p>
-      <p>Looking for entry level web development and sofware engineer roles.</p>
-      <div>
+      <div className="intro-container">
+        <p className="intro">
+          Recent college grad with internship, project-based, and coursework
+          experience. Looking for entry level web development and sofware
+          engineer roles.
+        </p>
+      </div>
+      <div className="personal-links">
         <ul>
-          <li>Github</li>
-          <li>LinkedIn</li>
+          <li>
+            <a href="https://github.com/sgafurov">
+              <img src={githubLogo} />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/sgafurov/">
+              <img src={linkedInLogo} />
+            </a>
+          </li>
         </ul>
       </div>
     </div>
