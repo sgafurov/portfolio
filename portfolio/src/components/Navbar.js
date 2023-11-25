@@ -1,12 +1,20 @@
 import myLogo from "../images/myLogo.png";
+import codeLogo from "../images/codeLogo.png";
 import "../styles/Navbar.css";
 
 export const Navbar = () => {
   return (
     <div className="navbar">
-      <a href="#">
-        <img src={myLogo} alt="logo" />
-      </a>
+      <div className="logo-and-name">
+        <div className="logo-div">
+          <a href="#">
+            <img src={codeLogo} alt="logo" className="logo" />
+          </a>
+        </div>
+        <a href="#">
+          <h1>Shakhram G.</h1>
+        </a>
+      </div>
       <div className="navbar-links">
         <nav>
           <ul>
