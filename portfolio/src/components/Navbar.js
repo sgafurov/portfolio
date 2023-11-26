@@ -6,11 +6,11 @@ export const Navbar = () => {
   return (
     <div className="navbar">
       <div className="logo-and-name">
-        <div className="logo-div">
+        {/* <div className="logo-div">
           <a href="#">
             <img src={codeLogo} alt="logo" className="logo" />
           </a>
-        </div>
+        </div> */}
         <a href="#">
           <h1>Shakhram G.</h1>
         </a>

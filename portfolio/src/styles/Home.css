@@ -13,6 +13,7 @@
 .hello {
     font-weight: 700;
 }
+
 .job-titles {
     color: rgb(77, 109, 212)
 }
@@ -47,10 +48,16 @@ li {
 }
 
 .personal-links ul li img {
-    width: 30px;
+    width: 50px;
     height: auto;
     display: block;
     margin: 0 auto;
+}
+
+video {
+    width: 400px;
+    height: auto;
+    /* Make the video fill its container */
 }
 
 .profile-img {
