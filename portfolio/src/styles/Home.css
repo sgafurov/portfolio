@@ -61,6 +61,7 @@ body {
     margin: 0 auto;
     position: relative;
     width: 430px;
+    z-index: 1;
 }
 
 @media (max-width: 768px) {
@@ -95,9 +96,9 @@ table {
     border-collapse: collapse;
 }
 
-/* td {
-    border: 1px solid #000;
-} */
+td {
+    border: 1px solid red;
+}
 
 .about-me-td, .resume-td, .projects-td {
     cursor: pointer;
