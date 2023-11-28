@@ -22,18 +22,6 @@ body {
     color: rgb(77, 109, 212)
 }
 
-ul {
-    list-style-type: none;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-}
-
-li {
-    margin-right: 30px;
-    font-size: 16px;
-}
-
 .intro-container {
     width: 500px;
     margin: 0 auto;
@@ -46,15 +34,32 @@ li {
     line-height: 1.5;
 }
 
+.personal-links ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.personal-links ul li {
+    margin:  auto;
+}
+
 .personal-links {
-    justify-content: center;
-    text-align: center;
+    margin: 0 auto;
+    width: 200px;
+    /* justify-content: center;
+    text-align: center; */
 }
 
 .personal-links ul li img {
     width: 50px;
     height: auto;
-    display: block;
+    margin: 0 auto;
+}
+
+.personal-links ul li a {
+    width: 50px;
+    height: auto;
     margin: 0 auto;
 }
 
@@ -86,7 +91,7 @@ table {
     border: 1px solid #000;
 } */
 
-.about-me-td, .resume-td, .projects-td{
+.about-me-td, .resume-td, .projects-td {
     cursor: pointer;
 }
 

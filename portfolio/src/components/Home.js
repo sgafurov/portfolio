@@ -63,6 +63,7 @@ export const Home = () => {
           Your browser does not support the video tag.
         </video>
 
+        {/* table is overlayed on the video to provide clickable-hot-spots on the video */}
         <table>
           <tbody>
             <tr>
@@ -91,12 +92,12 @@ export const Home = () => {
         <ul>
           <li>
             <a href="https://github.com/sgafurov">
-              <img src={githubLogo} />
+              <img src={githubLogo} alt="GitHub"/>
             </a>
           </li>
           <li>
             <a href="https://www.linkedin.com/in/sgafurov/">
-              <img src={linkedInLogo} />
+              <img src={linkedInLogo} alt="LinkedIn"/>
             </a>
           </li>
         </ul>

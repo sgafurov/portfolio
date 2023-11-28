@@ -11,7 +11,11 @@ export const Navbar = () => {
             <img src={codeLogo} alt="logo" className="logo" />
           </a>
         </div> */}
-        <h1>Shakhram G.</h1>
+        <h1>
+          <Link as={Link} to="/">
+            Shakhram G.
+          </Link>
+        </h1>
       </div>
       <div className="navbar-links">
         <nav>
