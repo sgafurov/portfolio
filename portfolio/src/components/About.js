@@ -1,3 +1,4 @@
+import React, { forwardRef } from "react";
 import "../styles/About.css";
 
 export const About = () => {
@@ -18,4 +19,4 @@ export const About = () => {
       <h2>Languages</h2>
     </div>
   );
-};
+}

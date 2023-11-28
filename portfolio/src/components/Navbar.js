@@ -1,4 +1,4 @@
-import myLogo from "../images/myLogo.png";
+import { Link } from "react-router-dom";
 import codeLogo from "../images/codeLogo.png";
 import "../styles/Navbar.css";
 
@@ -11,20 +11,24 @@ export const Navbar = () => {
             <img src={codeLogo} alt="logo" className="logo" />
           </a>
         </div> */}
-        <a href="#">
-          <h1>Shakhram G.</h1>
-        </a>
+        <h1>Shakhram G.</h1>
       </div>
       <div className="navbar-links">
         <nav>
           <ul>
             <li>
-              <a href="#">Home</a>
+              <Link as={Link} to="/">
+                Home
+              </Link>
             </li>
-            <li>About</li>
-            <li>Resume</li>
+            <li>
+              <Link as={Link} to="/about">
+                About
+              </Link>
+            </li>
+            {/*<li>Resume</li>
             <li>Projects</li>
-            <li>Contact</li>
+            <li>Contact</li> */}
           </ul>
         </nav>
       </div>

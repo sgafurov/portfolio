@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
 import githubLogo from "../images/githubLogo.png";
 import linkedInLogo from "../images/linkedInLogo.png";
-import profileImg from "../images/profileImg.png";
-import movingProfile from "../images/movingProfile.mp4";
+import movingProfileIcon from "../images/movingProfileIcon.mp4";
 import "../styles/Home.css";
 
 export const Home = () => {
@@ -56,9 +55,8 @@ export const Home = () => {
         </p>
       </div>
 
-      {/* <img src={profileImg} alt="logo" className="profile-img"/> */}
-      <video autoPlay controls={false} muted>
-        <source src={movingProfile} type="video/mp4" />
+      <video autoPlay controls={false} loop={true}>
+        <source src={movingProfileIcon} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
