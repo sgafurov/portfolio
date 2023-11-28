@@ -16,6 +16,7 @@ body {
 
 .hello {
     font-weight: 700;
+    margin-bottom: 0;
 }
 
 .job-titles {
@@ -34,21 +35,20 @@ body {
     line-height: 1.5;
 }
 
+.personal-links {
+    margin: 0 auto;
+    width: 200px;
+}
+
 .personal-links ul {
     list-style: none;
+    margin: 0;
     padding: 0;
     display: flex;
 }
 
 .personal-links ul li {
-    margin:  auto;
-}
-
-.personal-links {
-    margin: 0 auto;
-    width: 200px;
-    /* justify-content: center;
-    text-align: center; */
+    margin: auto;
 }
 
 .personal-links ul li img {
@@ -57,16 +57,10 @@ body {
     margin: 0 auto;
 }
 
-.personal-links ul li a {
-    width: 50px;
-    height: auto;
-    margin: 0 auto;
-}
-
 .video-and-table-container {
     margin: 0 auto;
     position: relative;
-    width: 400px;
+    width: 430px;
 }
 
 video {

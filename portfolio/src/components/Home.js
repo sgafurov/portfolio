@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import githubLogo from "../images/githubLogo.png";
-import linkedInLogo from "../images/linkedInLogo.png";
+import linkedInLogoWhite from "../images/linkedInLogoWhite.png";
 import movingProfileIcon from "../images/movingProfileIcon.mp4";
 import "../styles/Home.css";
 
@@ -97,7 +97,7 @@ export const Home = () => {
           </li>
           <li>
             <a href="https://www.linkedin.com/in/sgafurov/">
-              <img src={linkedInLogo} alt="LinkedIn"/>
+              <img src={linkedInLogoWhite} alt="LinkedIn"/>
             </a>
           </li>
         </ul>
