@@ -1,0 +1,9 @@
+[build]
+  base = "raiment/"
+  command = "npm run build"
+  publish = "build"
+
+[[redirects]]
+  from = "raiment/*"
+  to = "raiment/public/index.html"
+  status = 200
