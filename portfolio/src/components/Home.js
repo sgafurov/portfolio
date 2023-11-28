@@ -6,7 +6,7 @@ import movingProfileIcon from "../images/movingProfileIcon.mp4";
 import "../styles/Home.css";
 
 export const Home = () => {
-  let navigate = useNavigate()
+  let navigate = useNavigate();
   const [title, setTitle] = useState("");
   const [titleIndex, setTitleIndex] = useState(0);
   const [letterIndex, setLetterIndex] = useState(0);
@@ -70,7 +70,15 @@ export const Home = () => {
               <td></td>
               <td></td>
               <td></td>
-              <td className="about-me-td" onClick={()=>{navigate("/about")}}></td>
+              <td
+                className="about-me-td"
+                onClick={() => {
+                  navigate("/about");
+                }}
+                onTouchStart={() => {
+                  navigate("/about");
+                }}
+              ></td>
             </tr>
             <tr>
               <td></td>
@@ -79,10 +87,26 @@ export const Home = () => {
               <td></td>
             </tr>
             <tr>
-              <td className="resume-td" onClick={()=>{navigate("/resume")}}></td>
+              <td
+                className="resume-td"
+                onClick={() => {
+                  navigate("/resume");
+                }}
+                onTouchStart={() => {
+                  navigate("/resume");
+                }}
+              ></td>
               <td></td>
               <td></td>
-              <td className="projects-td" onClick={()=>{navigate("/projects")}}></td>
+              <td
+                className="projects-td"
+                onClick={() => {
+                  navigate("/projects");
+                }}
+                onTouchStart={() => {
+                  navigate("/projects");
+                }}
+              ></td>
             </tr>
           </tbody>
         </table>
@@ -92,12 +116,12 @@ export const Home = () => {
         <ul>
           <li>
             <a href="https://github.com/sgafurov">
-              <img src={githubLogo} alt="GitHub"/>
+              <img src={githubLogo} alt="GitHub" />
             </a>
           </li>
           <li>
             <a href="https://www.linkedin.com/in/sgafurov/">
-              <img src={linkedInLogoWhite} alt="LinkedIn"/>
+              <img src={linkedInLogoWhite} alt="LinkedIn" />
             </a>
           </li>
         </ul>
