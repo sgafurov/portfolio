@@ -6,11 +6,6 @@ export const Navbar = () => {
   return (
     <div className="navbar">
       <div className="logo-and-name">
-        {/* <div className="logo-div">
-          <a href="#">
-            <img src={codeLogo} alt="logo" className="logo" />
-          </a>
-        </div> */}
         <h1>
           <Link as={Link} to="/">
             Shakhram G.
