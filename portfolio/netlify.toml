@@ -1,9 +1,9 @@
 [build]
-  base = "raiment/"
+  base = "portfolio/"
   command = "npm run build"
   publish = "build"
 
 [[redirects]]
-  from = "raiment/*"
-  to = "raiment/public/index.html"
+  from = "portfolio/*"
+  to = "portfolio/public/index.html"
   status = 200
