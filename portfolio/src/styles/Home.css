@@ -63,6 +63,20 @@ body {
     width: 430px;
 }
 
+@media (max-width: 768px) {
+    .video-and-table-container {
+        width: 300px;
+    }
+    .hello {
+        font-size: 20px;
+    }
+    p.intro-container {
+    }
+    p.intro {
+        font-size: 12px;
+    }
+}
+
 video {
     /* width: 400px; when it was not inside a container */
     width: 100%;
