@@ -89,18 +89,12 @@ export const Home = () => {
                 onClick={() => {
                   navigate("/resume");
                 }}
-                onTouchStart={() => {
-                  navigate("/resume");
-                }}
               ></td>
               <td></td>
               <td></td>
               <td
                 className="projects-td"
                 onClick={() => {
-                  navigate("/projects");
-                }}
-                onTouchStart={() => {
                   navigate("/projects");
                 }}
               ></td>

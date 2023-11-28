@@ -84,7 +84,7 @@ table {
 
 td {
     position: relative;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .about-me-td, .resume-td, .projects-td {
