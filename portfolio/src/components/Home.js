@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import githubLogo from "../images/githubLogo.png";
 import linkedInLogo from "../images/linkedInLogo.png";
 import movingProfileIcon from "../images/movingProfileIcon.mp4";
 import "../styles/Home.css";
 
 export const Home = () => {
+  let navigate = useNavigate()
   const [title, setTitle] = useState("");
   const [titleIndex, setTitleIndex] = useState(0);
   const [letterIndex, setLetterIndex] = useState(0);
@@ -55,10 +57,35 @@ export const Home = () => {
         </p>
       </div>
 
-      <video autoPlay controls={false} loop={true}>
-        <source src={movingProfileIcon} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+      <div className="video-and-table-container">
+        <video autoPlay controls={false} loop={true}>
+          <source src={movingProfileIcon} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
+        <table>
+          <tbody>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td className="about-me-td" onClick={()=>{navigate("/about")}}></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td className="resume-td" onClick={()=>{navigate("/resume")}}></td>
+              <td></td>
+              <td></td>
+              <td className="projects-td" onClick={()=>{navigate("/projects")}}></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
       <div className="personal-links">
         <ul>
