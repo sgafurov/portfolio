@@ -58,7 +58,7 @@ export const Home = () => {
       </div>
 
       <div className="video-and-table-container">
-        <video autoPlay controls={false} loop={true}>
+        <video autoPlay controls={false} loop={true} playsInline>
           <source src={movingProfileIcon} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
