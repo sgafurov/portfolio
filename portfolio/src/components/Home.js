@@ -75,9 +75,6 @@ export const Home = () => {
                 onClick={() => {
                   navigate("/about");
                 }}
-                onTouchStart={() => {
-                  navigate("/about");
-                }}
               ></td>
             </tr>
             <tr>
