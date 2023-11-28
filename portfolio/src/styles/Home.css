@@ -101,6 +101,7 @@ table {
 
 .about-me-td, .resume-td, .projects-td {
     cursor: pointer;
+    pointer-events: auto;
 }
 
 /* .profile-img {
