@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "../styles/Navbar.css";
 
 export const Navbar = () => {
-  const [isMinimized, setIsMinimized] = useState(false);
+  const [isMinimized, setIsMinimized] = useState(window.innerWidth <= 768 ? true : false);
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);
 
   useEffect(() => {
@@ -47,6 +47,9 @@ export const Navbar = () => {
                   <br />
                   <Link to="/">Home</Link>
                   <Link to="/about">About</Link>
+                  <Link to="/resume">Resume</Link>
+                  <Link to="/projects">Projects</Link>
+                  <Link to="/contact">Contact</Link>
                 </div>
               )}
             </div>
@@ -57,18 +60,20 @@ export const Navbar = () => {
             <nav>
               <ul>
                 <li>
-                  <Link as={Link} to="/">
-                    Home
-                  </Link>
+                  <Link to="/">Home</Link>
                 </li>
                 <li>
-                  <Link as={Link} to="/about">
-                    About
-                  </Link>
+                  <Link to="/about">About</Link>
                 </li>
-                {/*<li>Resume</li>
-            <li>Projects</li>
-            <li>Contact</li> */}
+                <li>
+                  <Link to="/resume">Resume</Link>
+                </li>
+                <li>
+                  <Link to="/projects">Projects</Link>
+                </li>
+                <li>
+                  <Link to="/contact">Contact</Link>
+                </li>
               </ul>
             </nav>
           )}
