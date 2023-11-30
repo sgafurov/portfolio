@@ -33,18 +33,18 @@ export const Navbar = () => {
           </div>
           {isMinimized && (
             <div>
-              <h3
+              <h1
                 className={isMinimized ? "accordian-menu" : ""}
                 onClick={toggleDropdown}
               >
-                | | |
-              </h3>
+                ☰
+              </h1>
               {isDropdownVisible && (
                 <div
                   className="dropdown-menu"
                   style={{ display: "flex", flexDirection: "column" }}
                 >
-                  <br/>
+                  <br />
                   <Link to="/">Home</Link>
                   <Link to="/about">About</Link>
                 </div>
@@ -53,8 +53,8 @@ export const Navbar = () => {
           )}
         </div>
         <div className="navbar-links">
-          <nav>
-            {!isMinimized && (
+          {!isMinimized && (
+            <nav>
               <ul>
                 <li>
                   <Link as={Link} to="/">
@@ -70,8 +70,8 @@ export const Navbar = () => {
             <li>Projects</li>
             <li>Contact</li> */}
               </ul>
-            )}
-          </nav>
+            </nav>
+          )}
         </div>
       </div>
     </div>
