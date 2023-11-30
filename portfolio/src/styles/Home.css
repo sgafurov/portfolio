@@ -107,11 +107,11 @@ td {
     }
 
     p.intro {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .video-and-table-container {
-        width: 400px;
+        /* width: 400px; */
     }
 }
 

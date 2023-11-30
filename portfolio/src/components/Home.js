@@ -66,7 +66,9 @@ export const Home = () => {
         {/* table is overlayed on the video to provide clickable-hot-spots on the video */}
         <table>
           <tbody>
+            {/* new */}
             <tr>
+              <td></td>
               <td></td>
               <td></td>
               <td></td>
@@ -75,9 +77,62 @@ export const Home = () => {
                 onClick={() => {
                   navigate("/about");
                 }}
-                // onTouchStart={() => {
-                //   navigate("/about");
-                // }}
+              ></td>
+              <td
+                className="about-me-td"
+                onClick={() => {
+                  navigate("/about");
+                }}
+              ></td>
+            </tr>
+            
+            {/* new */}
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            {/* new */}
+            <tr>
+            <td
+                className="resume-td"
+                onClick={() => {
+                  navigate("/resume");
+                }}
+              ></td>
+              <td
+                className="resume-td"
+                onClick={() => {
+                  navigate("/resume");
+                }}
+              ></td>
+              <td></td>
+              <td></td>
+              <td
+                className="projects-td"
+                onClick={() => {
+                  navigate("/projects");
+                }}
+              ></td>
+               <td
+                className="projects-td"
+                onClick={() => {
+                  navigate("/projects");
+                }}
+              ></td>
+            </tr>
+            {/* <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td
+                className="about-me-td"
+                onClick={() => {
+                  navigate("/about");
+                }}
               ></td>
             </tr>
             <tr>
@@ -101,7 +156,7 @@ export const Home = () => {
                   navigate("/projects");
                 }}
               ></td>
-            </tr>
+            </tr> */}
           </tbody>
         </table>
       </div>
