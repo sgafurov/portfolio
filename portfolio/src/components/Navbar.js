@@ -4,6 +4,7 @@ import "../styles/Navbar.css";
 
 export const Navbar = () => {
   const [isMinimized, setIsMinimized] = useState(false);
+  const [isDropdownVisible, setIsDropdownVisible] = useState(false);
 
   useEffect(() => {
     window.addEventListener("resize", () => {
@@ -15,45 +16,63 @@ export const Navbar = () => {
     });
   }, []);
 
+  const toggleDropdown = () => {
+    setIsDropdownVisible(!isDropdownVisible);
+  };
+
   return (
-    <div className="navbar">
-      <div className="logo">
-        <div>
-          <h1>
-            <Link as={Link} to="/">
-              Shakhram G.
-            </Link>
-          </h1>
-        </div>
-        {isMinimized && (
+    <div className="outer-navbar-container">
+      <div className="navbar">
+        <div className="logo">
           <div>
-            <h3 className={isMinimized ? "accordian-menu" : ""}>| | |</h3>
+            <h1>
+              <Link as={Link} to="/">
+                Shakhram G.
+              </Link>
+            </h1>
           </div>
-        )}
-      </div>
-      <div className="navbar-links">
-        <nav>
-          {/* {isMinimized && (
-            <div className={isMinimized ? "accordian-menu" : ""}>| | |</div>
-          )} */}
-          {!isMinimized && (
-            <ul>
-              <li>
-                <Link as={Link} to="/">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link as={Link} to="/about">
-                  About
-                </Link>
-              </li>
-              {/*<li>Resume</li>
+          {isMinimized && (
+            <div>
+              <h3
+                className={isMinimized ? "accordian-menu" : ""}
+                onClick={toggleDropdown}
+              >
+                | | |
+              </h3>
+              {isDropdownVisible && (
+                <div
+                  className="dropdown-menu"
+                  style={{ display: "flex", flexDirection: "column" }}
+                >
+                  <br/>
+                  <Link to="/">Home</Link>
+                  <Link to="/about">About</Link>
+                </div>
+              )}
+            </div>
+          )}
+        </div>
+        <div className="navbar-links">
+          <nav>
+            {!isMinimized && (
+              <ul>
+                <li>
+                  <Link as={Link} to="/">
+                    Home
+                  </Link>
+                </li>
+                <li>
+                  <Link as={Link} to="/about">
+                    About
+                  </Link>
+                </li>
+                {/*<li>Resume</li>
             <li>Projects</li>
             <li>Contact</li> */}
-            </ul>
-          )}
-        </nav>
+              </ul>
+            )}
+          </nav>
+        </div>
       </div>
     </div>
   );

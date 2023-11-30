@@ -41,7 +41,7 @@ export const Home = () => {
   }, [titleIndex, letterIndex]);
 
   return (
-    <div>
+    <div className="home-container">
       <h1 className="hello">
         <span>Hi, I am </span>
         <span>

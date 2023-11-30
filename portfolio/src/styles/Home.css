@@ -1,6 +1,11 @@
 body {
     padding-bottom: 0 !important;
 }
+body {
+    margin: 0;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
 
 .cursor-blink {
     animation: blinker 1s linear infinite;
@@ -103,6 +108,10 @@ td {
 
     p.intro {
         font-size: 14px;
+    }
+
+    .video-and-table-container {
+        width: 400px;
     }
 }
 
