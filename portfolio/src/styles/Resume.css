@@ -1,5 +1,5 @@
 .resume {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
@@ -9,6 +9,32 @@ ol {
     padding: 0;
 }
 
-ol li {
+.job-experience {
     margin-bottom: 50px;
+    line-height: 1.5;
+}
+
+/* .technologies-used {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.technologies-used li div{
+    border: 1px white;
+    color: rgb(94 234 212/var(--tw-text-opacity));
+} */
+
+.technologies-used {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.technologies-used li {
+    background-color: rgba(45,212,191,.1);
+    color: rgb(143, 163, 225);
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 10px;
 }

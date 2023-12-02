@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import githubLogo from "../images/logos/githubLogo.png";
 import linkedInLogoWhite from "../images/logos/linkedInLogoWhite.png";
-import movingProfileIcon from "../images/movingProfileIcon.mp4";
+import movingProfileIcon from "../images/movingProfileIcon1.5.mp4";
 import "../styles/Home.css";
 
 export const Home = () => {
