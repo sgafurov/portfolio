@@ -58,7 +58,7 @@ export const Home = () => {
       </div>
 
       <div className="video-and-table-container">
-        <video autoPlay controls={false} loop={true} playsInline>
+        <video autoPlay muted controls={false} loop={true} playsInline>
           <source src={movingProfileIcon} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
@@ -85,7 +85,7 @@ export const Home = () => {
                 }}
               ></td>
             </tr>
-            
+
             {/* new */}
             <tr>
               <td></td>
@@ -97,7 +97,7 @@ export const Home = () => {
             </tr>
             {/* new */}
             <tr>
-            <td
+              <td
                 className="resume-td"
                 onClick={() => {
                   navigate("/resume");
@@ -117,7 +117,7 @@ export const Home = () => {
                   navigate("/projects");
                 }}
               ></td>
-               <td
+              <td
                 className="projects-td"
                 onClick={() => {
                   navigate("/projects");

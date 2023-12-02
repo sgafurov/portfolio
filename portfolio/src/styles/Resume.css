@@ -4,6 +4,10 @@
     margin: 0 auto;
 }
 
+.resume h1 {
+    margin-top: 0;
+}
+
 .resume ol {
     list-style: none;
     margin: 0;
@@ -33,7 +37,6 @@
 
 .job-dates p {
     margin: 0px;
-
 }
 
 .technologies-used {
