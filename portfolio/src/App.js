@@ -5,6 +5,7 @@ import { Home } from "./components/Home";
 import { About } from "./components/About";
 import {Resume} from "./components/Resume";
 import {Projects} from "./components/Projects";
+import {Contact} from "./components/Contact";
 import "./App.css";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route exact path="/about" element={<About />} />
           <Route exact path="/resume" element={<Resume />} />
           <Route exact path="/projects" element={<Projects />} />
+          <Route exact path="/contact" element={<Contact />} />
         </Routes>
       </Router>
     </div>
