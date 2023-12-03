@@ -25,8 +25,12 @@ export const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert("Message sent. Thank you!");
-    resetForm();
+    if (formData.name == "" || formData.message == "") {
+      alert("Error: form is empty.");
+    } else {
+      alert("Message sent. Thank you!");
+      resetForm();
+    }
   };
 
   return (
