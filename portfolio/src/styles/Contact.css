@@ -15,7 +15,7 @@
     padding: 10px;
 }
 
-.contact-form .name {
+.contact-form .name,  .contact-form .email{
     min-height: 40px;
 }
 

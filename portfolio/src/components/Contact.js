@@ -7,11 +7,12 @@ import "../styles/Contact.css";
 export const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
+    email: "",
     message: "",
   });
 
   const resetForm = () => {
-    setFormData({ name: "", message: "" });
+    setFormData({ name: "", email: "", message: "" });
   };
 
   const handleChange = (e) => {
@@ -25,7 +26,7 @@ export const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (formData.name == "" || formData.message == "") {
+    if (formData.name == "" || formData.email == "" || formData.message == "") {
       alert("Error: form is empty.");
     } else {
       alert("Message sent. Thank you!");
@@ -44,6 +45,16 @@ export const Contact = () => {
             name="name"
             value={formData.name}
             placeholder="Name"
+            onChange={handleChange}
+          />
+        </label>
+        <label>
+          <input
+            className="email"
+            type="text"
+            name="email"
+            value={formData.email}
+            placeholder="Email"
             onChange={handleChange}
           />
         </label>
