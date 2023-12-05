@@ -24,12 +24,20 @@ export const Contact = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    if (formData.name == "" || formData.email == "" || formData.message == "") {
-      alert("Error: form is empty.");
-    } else {
-      alert("Message sent. Thank you!");
+    let response = await fetch("http://localhost:5000/send", {
+      method: "POST",
+      mode: "cors",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+    let result = await response.json();
+    console.log("result", result);
+    alert(result.status);
+    if (result.status === "Message sent!") {
       resetForm();
     }
   };
