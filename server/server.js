@@ -7,13 +7,6 @@ const nodemailer = require("nodemailer");
 
 const app = express();
 app.use(cors());
-// app.use(
-//     cors({
-//       origin: "http://localhost:3000", // Update with your React app's URL
-//       methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
-//       credentials: true,
-//     })
-//   );
 app.use(express.json());
 app.use("/", router);
 app.listen(5000, () => console.log("Server Running"));
