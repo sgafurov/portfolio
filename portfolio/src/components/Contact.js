@@ -26,7 +26,7 @@ export const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    let response = await fetch("http://localhost:5000/send", {
+    let response = await fetch("https://portfolio-backend-mphg.onrender.com/send", {
       method: "POST",
       mode: "cors",
       headers: {
