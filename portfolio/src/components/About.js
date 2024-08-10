@@ -5,11 +5,14 @@ import githubLogo from "../images/logos/githubLogo.png";
 import mongoDb from "../images/logos/mongodb.png";
 import netlify from "../images/logos/netlify.png";
 import postgres from "../images/logos/postgres.png";
+import { AboutNav } from "./AboutNav"; // Importing the AboutNav component
 import "../styles/About.css";
 
 export const About = () => {
   return (
-    <main>
+    <main style={{ position: "relative" }}>
+      <AboutNav style={{ position: "fixed", right: 0, top: 0 }} />{" "}
+      {/* Render AboutNav with fixed positioning */}
       <div className="about-me-section">
         <section>
           <h1>About Me</h1>
