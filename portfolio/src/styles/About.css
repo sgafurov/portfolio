@@ -1,3 +1,28 @@
+main {
+    display: flex;
+    flex-direction: column;
+    scroll-snap-type: y mandatory;
+    /* Enables vertical snap scrolling */
+    height: 100vh;
+    /* Full viewport height */
+    overflow-y: scroll;
+    /* Enables vertical scrolling */
+    scroll-behavior: smooth;
+    /* Smooth scrolling */
+}
+
+section {
+    height: 100vh;
+    scroll-snap-align: start;
+    /* Aligns the section at the start of the viewport */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
 .about-me-section {
     /* top | right | bottom | left */
     /* margin: 50px auto 0 auto; */
