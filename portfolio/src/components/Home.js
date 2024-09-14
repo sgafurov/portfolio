@@ -4,7 +4,11 @@ import githubLogo from "../images/logos/githubLogo.png";
 import linkedInLogoWhite from "../images/logos/linkedInLogoWhite.png";
 import movingProfileIcon from "../images/movingProfileIcon1.5.mp4";
 import "../styles/Home.css";
-import profileIcon from "../images/profile.png";
+import profileIcon from "../images/blue-profile.png";
+import aboutMeIcon from "../images/about.png";
+import resumeIcon from "../images/resume.png";
+import projectsIcon from "../images/projects.png";
+
 export const Home = () => {
   let navigate = useNavigate();
   const [title, setTitle] = useState("");
@@ -51,117 +55,33 @@ export const Home = () => {
       </h1>
       <div className="intro-container">
         <p className="intro">
-          Recent college grad with internship, project-based, and coursework
-          experience. Looking for entry level web development and sofware
+          College grad with internship, project-based, and coursework
+          experience. Looking for entry level, internship, or full-time software
           engineer roles.
         </p>
       </div>
 
-      <div className="video-and-table-container">
-        {/* <video autoPlay muted controls={false} loop={true} playsInline preload="auto">
-          <source src={movingProfileIcon} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video> */}
-
-        <img src={profileIcon} alt="Profile" className="profile-icon" />
-
-        {/* table is overlayed on the video to provide clickable-hot-spots on the video */}
-        <table>
-          <tbody>
-            {/* new */}
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td
-                className="about-me-td"
-                onClick={() => {
-                  navigate("/about");
-                }}
-              ></td>
-              <td
-                className="about-me-td"
-                onClick={() => {
-                  navigate("/about");
-                }}
-              ></td>
-            </tr>
-
-            {/* new */}
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            {/* new */}
-            <tr>
-              <td
-                className="resume-td"
-                onClick={() => {
-                  navigate("/resume");
-                }}
-              ></td>
-              <td
-                className="resume-td"
-                onClick={() => {
-                  navigate("/resume");
-                }}
-              ></td>
-              <td></td>
-              <td></td>
-              <td
-                className="projects-td"
-                onClick={() => {
-                  navigate("/projects");
-                }}
-              ></td>
-              <td
-                className="projects-td"
-                onClick={() => {
-                  navigate("/projects");
-                }}
-              ></td>
-            </tr>
-            {/* <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td
-                className="about-me-td"
-                onClick={() => {
-                  navigate("/about");
-                }}
-              ></td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td
-                className="resume-td"
-                onClick={() => {
-                  navigate("/resume");
-                }}
-              ></td>
-              <td></td>
-              <td></td>
-              <td
-                className="projects-td"
-                onClick={() => {
-                  navigate("/projects");
-                }}
-              ></td>
-            </tr> */}
-          </tbody>
-        </table>
-      </div>
+        <div className="icon-container">
+          <img src={profileIcon} alt="Profile" className="profile-icon" />
+          <img
+            src={aboutMeIcon}
+            alt="About Me"
+            className="about-me-icon"
+            onClick={() => navigate("/about")}
+          />
+          <img
+            src={resumeIcon}
+            alt="Resume"
+            className="resume-icon"
+            onClick={() => navigate("/resume")}
+          />
+          <img
+            src={projectsIcon}
+            alt="Projects"
+            className="projects-icon"
+            onClick={() => navigate("/projects")}
+          />
+        </div>
 
       <div className="personal-links">
         <ul>
