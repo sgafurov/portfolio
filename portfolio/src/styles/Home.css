@@ -90,6 +90,7 @@ body {
     word-wrap: break-word;
     font-size: 18px;
     line-height: 1.5;
+    margin: 10px;
 }
 
 .personal-links {
@@ -151,6 +152,7 @@ td {
 
     .intro-container {
         width: fit-content;
+        max-width: 350px;
     }
 
     p.intro {
