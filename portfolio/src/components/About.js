@@ -7,28 +7,25 @@ import netlify from "../images/logos/netlify.png";
 import postgres from "../images/logos/postgres.png";
 import "../styles/About.css";
 
+import PhotoGrid from "./PhotoGrid";
+
 export const About = () => {
   return (
     <main>
-      <div className="about-me-section">
-        <section>
+      <div className="about-me-div">
+        <section className="about-me-section">
           <h1>About Me</h1>
-          <div className="about-me-list">
-            <p>🙋‍♂️ Shakhram Gafurov</p>
-            <p>📌 Brooklyn, New York</p>
-            <p>🎓 Brooklyn College, City University of New York</p>
-            <p>📜 Bachelor of Science, Computer Science</p>
-          </div>
+          <PhotoGrid />
         </section>
         <br />
-        <section>
+        <section className="hobbies-section">
           <h2>Hobbies</h2>
           <div>
             <h1>🥊 ☕ 🛹 📷 🥘</h1>
           </div>
         </section>
         <br />
-        <section>
+        <section className="languages-section">
           <h2>Languages / Frameworks</h2>
           <div style={{ margin: "20px" }}>
             <img
@@ -58,7 +55,7 @@ export const About = () => {
           </div>
         </section>
         <br />
-        <section>
+        <section className="technologies-section">
           <h2>Technologies</h2>
           <div style={{ margin: "20px" }}>
             <img className="technology-image" alt="postgres" src={postgres} />

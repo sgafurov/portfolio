@@ -9,6 +9,11 @@ main {
     /* Enables vertical scrolling */
     scroll-behavior: smooth;
     /* Smooth scrolling */
+    
+}
+
+.about-me-section {
+    display: flex;
 }
 
 section {
@@ -23,7 +28,7 @@ section {
     text-align: center;
 }
 
-.about-me-section {
+.about-me-div {
     /* top | right | bottom | left */
     /* margin: 50px auto 0 auto; */
     display: flex;
