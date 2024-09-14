@@ -1,10 +1,12 @@
+
 .App {
   text-align: center;
 }
 
 body {
   color: white;
-  background-color: #0F172A;
+  /* background-color: #0F172A; */
+  background-image: linear-gradient(to left, #000000, #0F172A);
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -14,7 +16,9 @@ body {
 }
 
 .App-header {
-  background-color: #282c34;
+  /* background-color: #282c34; */
+  background-image: linear-gradient(to bottom, #000000, #0F172A);
+
   min-height: 100vh;
   display: flex;
   flex-direction: column;

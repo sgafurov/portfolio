@@ -4,7 +4,7 @@ import githubLogo from "../images/logos/githubLogo.png";
 import linkedInLogoWhite from "../images/logos/linkedInLogoWhite.png";
 import movingProfileIcon from "../images/movingProfileIcon1.5.mp4";
 import "../styles/Home.css";
-
+import profileIcon from "../images/profile.png";
 export const Home = () => {
   let navigate = useNavigate();
   const [title, setTitle] = useState("");
@@ -58,10 +58,12 @@ export const Home = () => {
       </div>
 
       <div className="video-and-table-container">
-        <video autoPlay muted controls={false} loop={true} playsInline>
+        {/* <video autoPlay muted controls={false} loop={true} playsInline preload="auto">
           <source src={movingProfileIcon} type="video/mp4" />
           Your browser does not support the video tag.
-        </video>
+        </video> */}
+
+        <img src={profileIcon} alt="Profile" className="profile-icon" />
 
         {/* table is overlayed on the video to provide clickable-hot-spots on the video */}
         <table>

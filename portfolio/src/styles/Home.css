@@ -20,6 +20,26 @@ body {
     }
 }
 
+.profile-icon {
+    margin: 0 auto;
+    animation: breathing 4s ease-out infinite normal;
+    width: 90%;
+    height: auto;
+    display: block;
+    
+}
+
+@keyframes breathing {
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+
 .hello {
     font-weight: 700;
     margin: 0 auto;
