@@ -1,14 +1,21 @@
 import "../styles/Resume.css";
+import powerschool from "../images/powerschool.png";
+import techTalentPipeline from "../images/tech-talent-pipeline.png";
 
 export const Resume = () => {
   return (
-    <div className="resume">
-      <h1>Experiences</h1>
-      <ol>
+    <div className="resume-container">
+      <h1 className="resume-title">Experiences</h1>
+      <ul className="experiences-list">
         <li className="experiences">
           <div className="dates-and-descriptions">
             <div className="job-dates">
               <p>June 2022 - May 2023</p>
+              <img
+                src={powerschool}
+                alt="PowerSchool Logo"
+                className="company-logo"
+              />
             </div>
             <div className="job-descriptions">
               <span>
@@ -58,6 +65,11 @@ export const Resume = () => {
           <div className="dates-and-descriptions">
             <div className="job-dates">
               <p>Jan 2022 - Aug 2022</p>
+              <img
+                src={techTalentPipeline}
+                alt="TechTalentPipeline Logo"
+                className="company-logo"
+              />
             </div>
             <div className="job-descriptions">
               <span>
@@ -94,7 +106,7 @@ export const Resume = () => {
             </div>
           </div>
         </li>
-      </ol>
+      </ul>
     </div>
   );
 };
