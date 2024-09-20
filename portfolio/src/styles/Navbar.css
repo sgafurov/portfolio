@@ -6,7 +6,8 @@
     justify-content: space-around;
     align-items: center;
     padding: 10px;
-    /* background-color: #1d253ed8; */
+    /* background-color: #000000; */
+    background-image: linear-gradient(to left, #000000, #0F172A);
     position: fixed;
     top: 0;
     left: 0;

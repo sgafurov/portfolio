@@ -1,42 +1,18 @@
-main {
+/* main {
     display: flex;
     flex-direction: column;
     scroll-snap-type: y mandatory;
-    /* Enables vertical snap scrolling */
     height: 100vh;
-    /* Full viewport height */
     overflow-y: scroll;
-    /* Enables vertical scrolling */
-    scroll-behavior: smooth;
-    /* Smooth scrolling */
-    
-}
-
-.about-me-section {
-    display: flex;
-}
-
-section {
-    height: 100vh;
-    scroll-snap-align: start;
-    /* Aligns the section at the start of the viewport */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    box-sizing: border-box;
-    text-align: center;
+    scroll-behavior: smooth;    
 }
 
 .about-me-div {
-    /* top | right | bottom | left */
-    /* margin: 50px auto 0 auto; */
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
-    /* text-align: center; */
-    /* max-width: 600px; */
+    justify-content: center; 
+    text-align: center;
 }
 
 .about-me-section h1 {
@@ -50,4 +26,55 @@ section {
 .technology-image {
     width: 70px;
     height: auto;
+} */
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.about-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.about-text {
+    max-width: 640px;
+    text-align: left;
+}
+
+.about-subtitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.about-paragraph {
+    margin-bottom: 1rem;
+}
+
+.about-list {
+    list-style-type: disc;
+    list-style-position: inside;
+    margin-bottom: 1rem;
+}
+
+.about-languages {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.language-badge {
+    background-color: #e2e8f0;
+    border-radius: 9999px;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #4a5568;
 }
