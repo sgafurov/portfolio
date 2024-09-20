@@ -8,6 +8,15 @@ body {
     padding-bottom: 50px;
 }
 
+.hello {
+    font-weight: 600;
+    margin: 0 auto;
+}
+
+.job-titles {
+    color: rgb(77, 109, 212)
+}
+
 .cursor-blink {
     animation: blinker 1s linear infinite;
     color: white;
@@ -19,7 +28,6 @@ body {
         opacity: 0;
     }
 }
-
 
 .icon-container {
     position: relative;
@@ -71,15 +79,6 @@ body {
     cursor: pointer;
 }
 
-.hello {
-    font-weight: 700;
-    margin: 0 auto;
-}
-
-.job-titles {
-    color: rgb(77, 109, 212)
-}
-
 .intro-container {
     width: 500px;
     margin: 0 auto;
@@ -94,7 +93,8 @@ body {
 }
 
 .personal-links {
-    margin: 50px auto;
+    margin: auto;
+    margin-top: 30px;
     width: 200px;
 }
 
@@ -115,35 +115,6 @@ body {
     margin: 0 auto;
 }
 
-video {
-    /* width: 400px; when it was not inside a container */
-    width: 100%;
-    height: auto;
-    top: 0;
-    left: 0;
-}
-
-table {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    /* height: auto; */
-    /* height: 430px; */
-}
-
-td {
-    position: relative;
-    /* border: 1px solid red; */
-    /* height: auto; */
-}
-
-.about-me-td, .resume-td, .projects-td {
-    cursor: pointer;
-    pointer-events: auto;
-}
-
 @media (max-width: 768px) {
     .hello {
         font-size: 20px;
@@ -154,38 +125,11 @@ td {
         max-width: 350px;
     }
 
+    .icon-container {
+        width: 300px;
+    }
+
     p.intro {
         font-size: 12px;
     }
-
-    .video-and-table-container {
-        width: 350px;
-        height: 350px;
-    }
-
-    /* .video {
-        width: 350px;
-        height: 350px;
-    } */
-
-    /* .table {
-        width: 350px;
-        height: 350px;
-    } */
 }
-
-/* .profile-img {
-    height: auto;
-    width: 400px;
-    animation: profile-img-spin infinite 10s linear;
-} */
-
-/* @keyframes profile-img-spin {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-} */

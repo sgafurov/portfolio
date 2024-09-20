@@ -76,7 +76,7 @@ export const Contact = () => {
             onChange={handleChange}
           />
         </label>
-        <input type="submit" value="Send message" className="submit-button" />
+        <input type="submit" value="Send" className="submit-button" />
       </form>
 
       <div className="personal-links">

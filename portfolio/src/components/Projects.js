@@ -5,7 +5,7 @@ import "../styles/Projects.css";
 export const Projects = () => {
   return (
     <div className="projects">
-      <h1>Projects</h1>
+      <h1 className="projects-title">Projects</h1>
       <ul>
         <li className="projects">
           <div className="image-and-description">
