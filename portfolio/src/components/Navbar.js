@@ -14,12 +14,14 @@ export const Navbar = () => {
 
   const toggleDropdown = () => setIsDropdownVisible((prev) => !prev);
 
+  const handleLinkClick = () => setIsDropdownVisible(false);
+
   const navLinks = [
-    <Link to="/">Home</Link>,
-    <Link to="/about">About</Link>,
-    <Link to="/resume">Resume</Link>,
-    <Link to="/projects">Projects</Link>,
-    <Link to="/contact">Contact</Link>,
+    <Link to="/" onClick={handleLinkClick}>Home</Link>,
+    <Link to="/about" onClick={handleLinkClick}>About</Link>,
+    <Link to="/resume" onClick={handleLinkClick}>Resume</Link>,
+    <Link to="/projects" onClick={handleLinkClick}>Projects</Link>,
+    <Link to="/contact" onClick={handleLinkClick}>Contact</Link>,
   ];
 
   return (

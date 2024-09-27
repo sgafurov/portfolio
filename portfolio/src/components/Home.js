@@ -53,35 +53,35 @@ export const Home = () => {
           <span className="cursor-blink">|</span>
         </span>
       </h1>
-      <div className="intro-container">
+      {/* <div className="intro-container">
         <p className="intro">
           College grad with internship, project-based, and coursework
           experience. Looking for entry level, internship, or full-time software
           engineer roles.
         </p>
-      </div>
+      </div> */}
 
-        <div className="icon-container">
-          <img src={profileIcon} alt="Profile" className="profile-icon" />
-          <img
-            src={aboutMeIcon}
-            alt="About Me"
-            className="about-me-icon"
-            onClick={() => navigate("/about")}
-          />
-          <img
-            src={resumeIcon}
-            alt="Resume"
-            className="resume-icon"
-            onClick={() => navigate("/resume")}
-          />
-          <img
-            src={projectsIcon}
-            alt="Projects"
-            className="projects-icon"
-            onClick={() => navigate("/projects")}
-          />
-        </div>
+      <div className="icon-container">
+        <img src={profileIcon} alt="Profile" className="profile-icon" />
+        <img
+          src={aboutMeIcon}
+          alt="About Me"
+          className="about-me-icon"
+          onClick={() => navigate("/about")}
+        />
+        <img
+          src={resumeIcon}
+          alt="Resume"
+          className="resume-icon"
+          onClick={() => navigate("/resume")}
+        />
+        <img
+          src={projectsIcon}
+          alt="Projects"
+          className="projects-icon"
+          onClick={() => navigate("/projects")}
+        />
+      </div>
 
       <div className="personal-links">
         <ul>
