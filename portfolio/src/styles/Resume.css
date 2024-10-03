@@ -82,3 +82,32 @@
     margin-right: 10px;
     margin-top: 10px;
 }
+
+.education-section {
+    margin-bottom: 50px;
+}
+
+.education-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.education-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.education-item {
+    margin-bottom: 20px;
+}
+
+.college-logo {
+    width: 10%;
+    height: auto;
+    margin-right: 10px;
+    vertical-align: middle;
+}

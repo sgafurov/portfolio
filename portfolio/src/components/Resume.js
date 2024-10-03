@@ -1,10 +1,32 @@
 import "../styles/Resume.css";
 import powerschool from "../images/powerschool.png";
 import techTalentPipeline from "../images/tech-talent-pipeline.png";
+import brooklynCollegeLogo from "../images/brooklyn-college.jpg";
+import hofstraLogo from "../images/hofstra.jpg";
 
 export const Resume = () => {
   return (
     <div className="resume-container">
+      <div className="education-section">
+        <h2 className="education-title">Education</h2>
+        <ul className="education-list">
+          <li className="education-item">
+            <strong>
+              <img src={brooklynCollegeLogo} alt="Brooklyn College Logo" className="college-logo" />
+              Brooklyn College
+            </strong>
+            <p>Bachelor's in Computer Science (2019 - 2023)</p>
+          </li>
+          <li className="education-item">
+            <strong>
+              <img src={hofstraLogo} alt="Hofstra University Logo" className="college-logo" />
+              Hofstra University
+            </strong>
+            <p>Master's in Computer Science (In Progress, 2024 - 2026)</p>
+          </li>
+        </ul>
+      </div>
+
       <h1 className="resume-title">Experiences</h1>
       <ul className="experiences-list">
         <li className="experiences">
