@@ -37,16 +37,26 @@
 
 @media (max-width: 768px) {
     .image-and-description {
+        padding: 20px;
         display: flex;
         flex-direction: column-reverse;
         justify-content: space-between;
     }
 
+    .description {
+        flex: 2;
+        text-align: left;
+        margin: 0;
+    }
+
     .image {
         margin-top: 30px;
         margin-left: 30px;
-        /* max-width: 100%;
-        height: auto;
-        max-height: 200px; */
     }
+}
+
+.project-link {
+    text-decoration: none;
+    color: inherit;
+    border-bottom: 1px solid white;
 }

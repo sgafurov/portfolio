@@ -88,12 +88,11 @@
 
 .education-section {
     margin-bottom: 50px;
-    padding: 20px;
 }
 
 .education-list {
     list-style-type: none;
-    padding: 0;
+    padding: 20px;
     margin: 0;
     text-align: left;
     line-height: 1.5;
@@ -109,7 +108,7 @@
 }
 
 .college-logo {
-    width: 20%;
+    width: 15%;
     height: auto;
     margin-right: 20px;
     vertical-align: middle;

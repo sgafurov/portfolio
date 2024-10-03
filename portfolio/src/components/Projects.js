@@ -12,7 +12,7 @@ export const Projects = () => {
             <img className="image" src={dropInPreview} />
             <div className="description">
               <h3>
-                <a href="https://github.com/sgafurov/Drop_In_Frontend">
+                <a className="project-link" href="https://github.com/sgafurov/Drop_In_Frontend">
                   Drop-In
                 </a>
               </h3>
@@ -41,7 +41,7 @@ export const Projects = () => {
             <img className="image" src={raimentPreview} />
             <div className="description">
               <h3>
-                <a href="https://github.com/sgafurov/Raiment">Raiment</a>
+                <a className="project-link" href="https://github.com/sgafurov/Raiment">Raiment</a>
               </h3>
               <p>
                 A website for posting clothing to sell online. Upload images,
