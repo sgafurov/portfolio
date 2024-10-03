@@ -135,19 +135,19 @@ body {
 
     .about-me-icon {
         width: 40%;
-        top: -40px;
-        right: -30px;
+        top: -10%;
+        right: -10%;
     }
 
     .resume-icon {
         width: 40%;
-        top: 230px;
-        right: 270px;
+        top: 70%;
+        right: 70%;
     }
 
     .projects-icon {
         width: 40%;
-        top: 230px;
-        right: -50px;
+        top: 65%;
+        right: -15%;
     }
 }
