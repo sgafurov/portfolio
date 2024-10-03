@@ -17,15 +17,24 @@ export const Navbar = () => {
   const handleLinkClick = () => setIsDropdownVisible(false);
 
   const navLinks = [
-    <Link to="/" onClick={handleLinkClick}>Home</Link>,
-    <Link to="/about" onClick={handleLinkClick}>About</Link>,
-    <Link to="/resume" onClick={handleLinkClick}>Resume</Link>,
-    <Link to="/projects" onClick={handleLinkClick}>Projects</Link>,
-    <Link to="/contact" onClick={handleLinkClick}>Contact</Link>,
+    <Link to="/" onClick={handleLinkClick}>
+      Home
+    </Link>,
+    <Link to="/about" onClick={handleLinkClick}>
+      About
+    </Link>,
+    <Link to="/resume" onClick={handleLinkClick}>
+      Resume
+    </Link>,
+    <Link to="/projects" onClick={handleLinkClick}>
+      Projects
+    </Link>,
+    <Link to="/contact" onClick={handleLinkClick}>
+      Contact
+    </Link>,
   ];
 
   return (
-    <div className="outer-navbar-container">
       <div className="navbar">
         <div className="logo">
           <div>
@@ -37,17 +46,19 @@ export const Navbar = () => {
           </div>
           {isMinimized && (
             <div>
-              <h1 className={"accordian-menu"} onClick={toggleDropdown}>
+              <h1
+                className={`accordian-btn ${isDropdownVisible ? "hidden" : ""}`}
+                onClick={toggleDropdown}
+              >
                 ☰
               </h1>
-              {isDropdownVisible && (
-                <div
-                  className="dropdown-menu"
-                  style={{ display: "flex", flexDirection: "column" }}
-                >
-                  {navLinks}
-                </div>
-              )}
+              <div
+                className={`dropdown-menu ${
+                  isDropdownVisible ? "visible" : ""
+                }`}
+              >
+                {navLinks}
+              </div>
             </div>
           )}
         </div>
@@ -63,6 +74,5 @@ export const Navbar = () => {
           )}
         </div>
       </div>
-    </div>
   );
 };

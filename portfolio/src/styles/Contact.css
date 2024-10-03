@@ -6,6 +6,11 @@
     margin-bottom: 50px;
 }
 
+.contact-form h1 {
+    font-weight:300;
+
+}
+
 .contact-form input, .contact-form textarea {
     margin-bottom: 20px;
     width: 330px;
