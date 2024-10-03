@@ -8,21 +8,33 @@ export const Resume = () => {
   return (
     <div className="resume-container">
       <div className="education-section">
-        <h2 className="education-title">Education</h2>
+        <h1 className="">Education</h1>
         <ul className="education-list">
           <li className="education-item">
             <strong>
-              <img src={brooklynCollegeLogo} alt="Brooklyn College Logo" className="college-logo" />
-              Brooklyn College
+              <img
+                src={hofstraLogo}
+                alt="Hofstra University Logo"
+                className="college-logo"
+              />
+              Hofstra University
             </strong>
-            <p>Bachelor's in Computer Science (2019 - 2023)</p>
+            <div className="education-year">
+              <p>Master's in Computer Science (2024 - 2026)</p>
+            </div>
           </li>
           <li className="education-item">
             <strong>
-              <img src={hofstraLogo} alt="Hofstra University Logo" className="college-logo" />
-              Hofstra University
+              <img
+                src={brooklynCollegeLogo}
+                alt="Brooklyn College Logo"
+                className="college-logo"
+              />
+              Brooklyn College
             </strong>
-            <p>Master's in Computer Science (In Progress, 2024 - 2026)</p>
+            <div className="education-year">
+              <p>Bachelor's in Computer Science (2019 - 2023)</p>
+            </div>
           </li>
         </ul>
       </div>

@@ -4,7 +4,7 @@
     margin: 0 auto;
 }
 
-.resume-title {
+.resume-container h1 {
     font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 1.5rem;
@@ -58,8 +58,12 @@
 .job-descriptions {
     /* Takes 2 parts of the available space, more than job-dates */
     flex: 2;
-    border-left: 5px solid rgb(0, 0, 0);
+    border-left: 1px solid #dddddd82;
     padding-left: 20px;
+}
+
+.job-descriptions li {
+    margin-bottom: 10px;
 }
 
 .job-dates p {
@@ -85,12 +89,7 @@
 
 .education-section {
     margin-bottom: 50px;
-}
-
-.education-title {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
+    padding: 20px;
 }
 
 .education-list {
@@ -102,12 +101,33 @@
 }
 
 .education-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 20px;
+    padding: 10px;
+    /* border-bottom: 1px solid #dddddd82; */
 }
 
 .college-logo {
-    width: 10%;
+    width: 20%;
     height: auto;
-    margin-right: 10px;
+    margin-right: 20px;
     vertical-align: middle;
+    border-radius: 5px;
+}
+
+.education-item strong {
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
+.education-item p {
+    margin: 0;
+    font-size: 1rem;
+    color: #9c9c9c;
+}
+
+.education-year {
+    margin-left: auto;
 }
