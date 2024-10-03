@@ -116,14 +116,6 @@ body {
 }
 
 @media (max-width: 768px) {
-    .hello {
-        font-size: 25px;
-    }
-
-    p.intro {
-        font-size: 15px;
-    }
-
     .intro-container {
         width: fit-content;
         max-width: 350px;

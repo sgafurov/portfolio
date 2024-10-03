@@ -11,27 +11,23 @@ export const Resume = () => {
         <h1 className="">Education</h1>
         <ul className="education-list">
           <li className="education-item">
-            <strong>
-              <img
-                src={hofstraLogo}
-                alt="Hofstra University Logo"
-                className="college-logo"
-              />
-              Hofstra University
-            </strong>
+            <img
+              src={hofstraLogo}
+              alt="Hofstra University Logo"
+              className="college-logo"
+            />
+            <h3>Hofstra University</h3>
             <div className="education-year">
               <p>Master's in Computer Science (2024 - 2026)</p>
             </div>
           </li>
           <li className="education-item">
-            <strong>
-              <img
-                src={brooklynCollegeLogo}
-                alt="Brooklyn College Logo"
-                className="college-logo"
-              />
-              Brooklyn College
-            </strong>
+            <img
+              src={brooklynCollegeLogo}
+              alt="Brooklyn College Logo"
+              className="college-logo"
+            />
+            <h3>Brooklyn College</h3>
             <div className="education-year">
               <p>Bachelor's in Computer Science (2019 - 2023)</p>
             </div>
