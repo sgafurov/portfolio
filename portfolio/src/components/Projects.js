@@ -27,15 +27,15 @@ export const Projects = () => {
                 making a descision on an apartment building.
               </p>
               <ul className="technologies-used">
-                <li>Javascript</li>
-                <li>React</li>
-                <li>Redux</li>
-                <li>Google Maps API</li>
-                <li>Netlify</li>
-                <li>Node</li>
-                <li>Express</li>
-                <li>MongoDB</li>
-                <li>Render</li>
+                <li><p>Javascript</p></li>
+                <li><p>React</p></li>
+                <li><p>Redux</p></li>
+                <li><p>Google Maps API</p></li>
+                <li><p>Netlify</p></li>
+                <li><p>Node</p></li>
+                <li><p>Express</p></li>
+                <li><p>MongoDB</p></li>
+                <li><p>Render</p></li>
               </ul>
             </div>
           </div>
@@ -62,13 +62,13 @@ export const Projects = () => {
                 the site.
               </p>
               <ul className="technologies-used">
-                <li>Javascript</li>
-                <li>React</li>
-                <li>Redux</li>
-                <li>Firebase Storage</li>
-                <li>Firebase Auth</li>
-                <li>Firebase Firestone</li>
-                <li>Firebase Realtime Database</li>
+                <li><p>Javascript</p></li>
+                <li><p>React</p></li>
+                <li><p>Redux</p></li>
+                <li><p>Firebase Storage</p></li>
+                <li><p>Firebase Auth</p></li>
+                <li><p>Firebase Firestone</p></li>
+                <li><p>Firebase Realtime Database</p></li>
               </ul>
             </div>
           </div>
