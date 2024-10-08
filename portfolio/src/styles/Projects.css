@@ -1,4 +1,4 @@
-.projects {
+.projects-container {
     max-width: 850px;
     margin: 0 auto;
     margin-bottom: 50px;
@@ -10,11 +10,15 @@
     margin-bottom: 50px;
 }
 
-.projects ul {
+.projects-ul {
     list-style-type: none;
     margin: 0 auto;
     padding: 0;
+}
 
+.projects-li {
+    list-style-type: none;
+    margin-bottom: 50px;
 }
 
 .image-and-description {
@@ -35,10 +39,19 @@
     margin-left: 30px;
 }
 
+.description h3 {
+    margin-top: 0;
+}
+
 .project-link {
     text-decoration: none;
     color: inherit;
     border-bottom: 1px solid white;
+}
+
+.technologies-used {
+    margin: 0;
+    padding: 0;
 }
 
 @media (max-width: 768px) {
