@@ -76,7 +76,7 @@ export const About = () => {
     <div className="about-container">
       <h1 className="about-title">About Me</h1>
       <div className="about-text">
-        <h2 className="about-subtitle">Education</h2>
+        <h3 className="about-subtitle">Education</h3>
         <p className="about-paragraph">
           I obtained my bachelor's in Computer Science at Brooklyn College. I'm
           currently pursuing a master's in Computer Science at Hofstra
@@ -98,7 +98,7 @@ export const About = () => {
           <li>Cooking 🥘</li>
         </ul>
 
-        <h2 className="about-subtitle">Programming Languages</h2>
+        <h3 className="about-subtitle">Programming Languages</h3>
         <p className="about-paragraph">
           I'm proficient in a variety of programming languages frameworks, and
           technologies:

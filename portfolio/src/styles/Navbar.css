@@ -94,10 +94,6 @@ nav li:last-child {
 }
 
 @media (max-width: 768px) {
-    .navbar-links {
-        font-size: 16px;
-    }
-
     .logo {
         width: 100%;
     }

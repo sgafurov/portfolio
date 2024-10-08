@@ -1,7 +1,6 @@
 .projects-container {
     max-width: 850px;
     margin: 0 auto;
-    margin-bottom: 50px;
     justify-content: center;
 }
 
@@ -47,18 +46,14 @@
     text-decoration: none;
     color: inherit;
     border-bottom: 1px solid white;
-}gi
+}
 
-.technologies-used, .technologies-used p{
+.technologies-used, .technologies-used p {
     margin: 0;
     padding: 0;
 }
 
 @media (max-width: 768px) {
-    .projects-container {
-        padding: 0 50px 0 50px;
-    }
-
     .projects-title {
         margin-bottom: 10px;
     }
