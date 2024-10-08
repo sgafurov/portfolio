@@ -55,6 +55,9 @@
 }
 
 @media (max-width: 768px) {
+    .projects-container {
+        padding: 0 50px 0 50px;
+    }
     .projects-title {
         margin-bottom: 10px;
     }
