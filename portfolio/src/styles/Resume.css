@@ -2,10 +2,12 @@
     /* text-align: center; */
     max-width: 850px;
     margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    padding: 30px;
 }
 
 .resume-container h1 {
-    font-weight:300;
     margin-bottom: 1.5rem;
 }
 
@@ -28,11 +30,18 @@
 }
 
 .job-dates {
+    /* Takes 1 part of the available space */
     flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: center;    
-    /* Takes 1 part of the available space */
+    align-items: center;
+    padding-right: 20px;
+}
+
+.job-dates p {
+    margin: 0px;
+    /* i dont want it to be numbered */
+    list-style-type: none;
 }
 
 .company-logo {
@@ -65,10 +74,9 @@
     margin-bottom: 10px;
 }
 
-.job-dates p {
-    margin: 0px;
-    /* i dont want it to be numbered */
-    list-style-type: none;
+.job-descriptions ul {
+    margin: 0;
+    padding-left: 20px;
 }
 
 .technologies-used {
@@ -92,8 +100,8 @@
 
 .education-list {
     list-style-type: none;
+    margin: 0 auto;
     padding: 20px;
-    margin: 0;
     text-align: left;
     line-height: 1.5;
 }
@@ -103,7 +111,6 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
-    padding: 10px;
     /* border-bottom: 1px solid #dddddd82; */
 }
 
@@ -113,11 +120,10 @@
     margin-right: 20px;
     vertical-align: middle;
     border-radius: 5px;
+    align-items: left;
+    text-align: left;
 }
 
-.education-item strong {
-    margin-right: 10px;
-}
 
 .education-item p {
     margin: 0;
@@ -126,4 +132,11 @@
 
 .education-year {
     margin-left: auto;
+    text-align: right;
+}
+
+@media (max-width: 768px) {
+    .college-logo {
+        margin: 5px;
+    }
 }

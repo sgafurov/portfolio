@@ -43,7 +43,7 @@ export const Contact = () => {
   };
 
   return (
-    <div>
+    <div className="contact-container">
       <form className="contact-form" onSubmit={handleSubmit}>
         <h1>Send me a message</h1>
         <label>
