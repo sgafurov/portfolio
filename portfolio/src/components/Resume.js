@@ -10,7 +10,7 @@ export const Resume = () => {
       <div className="education-section">
         <h1 className="">Education</h1>
         <ul className="education-list">
-          <li className="education-item">
+          {/* <li className="education-item">
             <img
               src={hofstraLogo}
               alt="Hofstra University Logo"
@@ -20,7 +20,7 @@ export const Resume = () => {
             <div className="education-year">
               <p>Master's in Computer Science (2024 - 2026)</p>
             </div>
-          </li>
+          </li> */}
           <li className="education-item">
             <img
               src={brooklynCollegeLogo}
