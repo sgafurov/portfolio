@@ -101,7 +101,7 @@
 .education-list {
     list-style-type: none;
     margin: 0 auto;
-    padding: 20px;
+    padding: 0;
     text-align: left;
     line-height: 1.5;
 }
@@ -109,21 +109,39 @@
 .education-item {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     margin-bottom: 20px;
-    /* border-bottom: 1px solid #dddddd82; */
+}
+
+.education-logo-container {
+    /* Takes 1 part of the available space, matching job-dates */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 20px;
 }
 
 .college-logo {
-    width: 15%;
+    max-width: 40%;
+    width: auto;
     height: auto;
-    margin-right: 20px;
-    vertical-align: middle;
+    margin: 0 auto;
+    margin-top: 20px;
     border-radius: 5px;
-    align-items: left;
-    text-align: left;
+    align-items: center;
+    text-align: center;
+    object-fit: contain;
+    display: block;
 }
 
+.education-content {
+    /* Takes 2 parts of the available space, matching job-descriptions */
+    flex: 2;
+    border-left: 1px solid #dddddd82;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
 
 .education-item p {
     margin: 0;
@@ -131,8 +149,7 @@
 }
 
 .education-year {
-    margin-left: auto;
-    text-align: right;
+    text-align: left;
 }
 
 @media (max-width: 768px) {

@@ -22,14 +22,18 @@ export const Resume = () => {
             </div>
           </li> */}
           <li className="education-item">
-            <img
-              src={brooklynCollegeLogo}
-              alt="Brooklyn College Logo"
-              className="college-logo"
-            />
-            <h3>Brooklyn College</h3>
-            <div className="education-year">
-              <p>Bachelor's in Computer Science (2019 - 2023)</p>
+            <div className="education-logo-container">
+              <img
+                src={brooklynCollegeLogo}
+                alt="Brooklyn College Logo"
+                className="college-logo"
+              />
+            </div>
+            <div className="education-content">
+              <h3>Brooklyn College</h3>
+              <div className="education-year">
+                <p>BS Computer Science 2023</p>
+              </div>
             </div>
           </li>
         </ul>

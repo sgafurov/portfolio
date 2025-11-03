@@ -7,4 +7,9 @@ body {
   /* background-color: #0F172A; */
   background-image: linear-gradient(to left, #000000, #0F172A);
   font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+}
+
+html {
+  overflow-x: hidden;
 } 

@@ -78,15 +78,14 @@ export const About = () => {
       <div className="about-text">
         <h3 className="about-subtitle">Education</h3>
         <p className="about-paragraph">
-          I obtained my bachelor's in Computer Science at Brooklyn College. I'm
-          currently pursuing a master's in Computer Science at Hofstra
-          University. My coursework includes data structures, algorithms,
-          object-oriented programming, and web development. I'm particularly
-          interested in solving real-world problems, and creating helpful tools
+          Obtained B.S. Computer Science at Brooklyn College, 2023.
+          Coursework included data structures, algorithms,
+          object-oriented programming, and web development.
+          Interested in solving real-world problems, and creating helpful tools
           for people.
         </p>
 
-        <h2 className="about-subtitle">Hobbies</h2>
+        <h3 className="about-subtitle">Hobbies</h3>
         <p className="about-paragraph">
           Outside of my academic pursuits, I enjoy:
         </p>
@@ -94,8 +93,7 @@ export const About = () => {
           <li>Playing backgammon🎲</li>
           <li>Photography 📷</li>
           <li>Kickboxing 🥊</li>
-          <li>Killing time in cafes☕</li>
-          <li>Cooking 🥘</li>
+          <li>Finding new cafes☕</li>
         </ul>
 
         <h3 className="about-subtitle">Programming Languages</h3>
